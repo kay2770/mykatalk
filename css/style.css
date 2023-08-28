@@ -1,0 +1,100 @@
+body {
+  min-width: 480px;
+  background-color: #fff;
+}
+@media screen and (min-width:510px) {
+  body {
+    background-color: #ffd700;
+  }
+}
+body > #wrap > h1 {
+  display: none;
+}
+@media screen and (min-width:510px) {
+  body > #wrap > h1 {
+    display: block;
+    font-size: 32px;
+    line-height: 25;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+body > #wrap > #mobile {
+  min-width: 480px;
+  background-color: #fff;
+}
+@media screen and (min-width:510px) {
+  body > #wrap > #mobile {
+    display: none;
+  }
+}
+body > #wrap > #mobile > header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > #wrap > #mobile > header > .wifi {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  letter-spacing: 1px;
+}
+body > #wrap > #mobile > header > h2 {
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+body > #wrap > #mobile > header > .battery {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 16px;
+}
+body > #wrap > #mobile > footer > div {
+  width: 480px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  line-height: 70px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  background-color: #fafafa;
+}
+body > #wrap > #mobile > footer > div > a {
+  display: inline;
+  height: 70px;
+}
+body > #wrap > #mobile > footer > div > a > .far.fa-user {
+  position: absolute;
+  top: 25px;
+  left: 65px;
+}
+body > #wrap > #mobile > footer > div > a > .far.fa-user:hover {
+  color: #fa6f6f;
+}
+body > #wrap > #mobile > footer > div > a > .far.fa-comment {
+  position: absolute;
+  top: 25px;
+  left: 175px;
+}
+body > #wrap > #mobile > footer > div > a > .far.fa-comment:hover {
+  color: #fa6f6f;
+}
+body > #wrap > #mobile > footer > div > a > .fas.fa-search {
+  position: absolute;
+  top: 25px;
+  right: 175px;
+}
+body > #wrap > #mobile > footer > div > a > .fas.fa-search:hover {
+  color: #fa6f6f;
+}
+body > #wrap > #mobile > footer > div > a > .fas.fa-ellipsis-h {
+  position: absolute;
+  top: 25px;
+  right: 65px;
+}
+body > #wrap > #mobile > footer > div > a > .fas.fa-ellipsis-h:hover {
+  color: #fa6f6f;
+}/*# sourceMappingURL=style.css.map */

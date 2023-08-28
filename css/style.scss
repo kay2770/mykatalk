@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+$mobile: 'screen and (max-width:510px)';
+$pc: 'screen and (min-width:510px)';
+
+body {
+	@media #{$pc} {
+		background-color: #ffd700;
+	}
+	min-width: 480px;
+	background-color: #fff;
+	> #wrap {
+		> h1 {
+			display: none;
+			@media #{$pc} {
+				display: block;
+				font-size: 32px;
+				line-height: 25;
+				font-weight: normal;
+				text-align: center;
+			}
+		} //end of h1
+
+		> #mobile {
+			min-width: 480px;
+			background-color: #fff;
+			@media #{$pc} {
+				display: none;
+			}
+
+			> header {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				> .wifi {
+					position: absolute;
+					left: 10px;
+					top: 0;
+					letter-spacing: 1px;
+				}
+
+				> h2 {
+					font-size: 15px;
+					font-weight: normal;
+					letter-spacing: 2px;
+				}
+
+				> .battery {
+					position: absolute;
+					top: 0;
+					right: 20px;
+					font-size: 16px;
+				}
+			} //end of header
+
+			> footer {
+				> div {
+					width: 480px;
+					height: 70px;
+					position: absolute;
+					bottom: 0;
+					font-size: 25px;
+					line-height: 70px;
+					text-align: center;
+					border-top: 1px solid #ccc;
+					background-color: #fafafa;
+
+					> a {
+						display: inline;
+						height: 70px;
+						> .far.fa-user {
+							position: absolute;
+							top: 25px;
+							left: 65px;
+
+							&:hover {
+								color: #fa6f6f;
+							}
+						}
+
+						> .far.fa-comment {
+							position: absolute;
+							top: 25px;
+							left: 175px;
+
+							&:hover {
+								color: #fa6f6f;
+							}
+						}
+
+						> .fas.fa-search {
+							position: absolute;
+							top: 25px;
+							right: 175px;
+
+							&:hover {
+								color: #fa6f6f;
+							}
+						}
+
+						> .fas.fa-ellipsis-h {
+							position: absolute;
+							top: 25px;
+							right: 65px;
+
+							&:hover {
+								color: #fa6f6f;
+							}
+						}
+					} //end of a
+				} //end of div
+			} //end of footer
+		} //end of #mobile
+	} //end of #wrap
+} //end of body
