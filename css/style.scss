@@ -33,6 +33,7 @@ body {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				margin-top: 10px;
 
 				> .wifi {
 					position: absolute;
@@ -54,6 +55,221 @@ body {
 					font-size: 16px;
 				}
 			} //end of header
+
+			> section {
+				overflow: hidden;
+				position: relative;
+				width: 480px;
+				height: 805px;
+
+				> .article {
+					> .article-container {
+						display: flex;
+						flex-flow: row nowrap;
+
+						position: absolute;
+						left: 0;
+						top: 0;
+
+						left: -480px;
+						left: -960px;
+						left: -1440px;
+						left: 0;
+
+						width: calc(480px * 4);
+						> .article-box {
+							width: 480px;
+							background-position: center center;
+							background-size: cover;
+
+							> .talk {
+								position: relative;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								margin-top: 10px;
+
+								> h3 {
+									position: absolute;
+									top: 28px;
+									left: 20px;
+									font-size: 28px;
+									font-weight: 500;
+								}
+
+								> h4 {
+									position: absolute;
+									top: 28px;
+									left: 90px;
+									color: #dedede;
+									font-size: 28px;
+									font-weight: 500;
+								}
+
+								> h5 {
+									position: absolute;
+									top: 28px;
+									right: 0;
+									font-size: 28px;
+									letter-spacing: 30px;
+									cursor: pointer;
+									> a {
+										&:hover {
+											color: red;
+										}
+									}
+								}
+								> .grouptalk {
+									> .group {
+										width: 430px;
+										height: 80px;
+										margin: 0 auto;
+										position: absolute;
+										top: 100px;
+										left: 28px;
+
+										> .img {
+											width: 80px;
+											height: 80px;
+
+											> .fas.fa-user {
+												float: left;
+												width: 35px;
+												height: 35px;
+												color: darken(#83c4dd, 20%);
+												font-size: 25px;
+												text-align: center;
+												line-height: 35px;
+												background-color: #83c4dd;
+												border: 1px solid #83c4dd;
+												border-radius: 14px;
+
+												&:first-child {
+													margin-right: 3px;
+													color: darken(#48b951, 10%);
+													background-color: #48b951;
+													border: 1px solid #48b951;
+												}
+
+												&:nth-child(2) {
+													margin-bottom: 3px;
+												}
+
+												&:last-child {
+													margin-left: 3px;
+												}
+											}
+										}
+
+										.name {
+											position: absolute;
+											top: 13px;
+											left: 92px;
+											width: 250px;
+											font-size: 23px;
+											font-weight: bold;
+										}
+
+										.txt {
+											position: absolute;
+											top: 43px;
+											left: 92px;
+											width: 250px;
+											color: #a3a2a2;
+											font-size: 15px;
+										}
+
+										> .date {
+											position: absolute;
+											top: 28px;
+											left: 375px;
+											width: 80px;
+											color: #a3a2a2;
+										}
+
+										&:hover {
+											background-color: #faf6e0;
+										}
+									} //end of .group
+								} //end of .grouptalk
+							} //end of .talk
+						} //end of .article-box
+
+						> .article-box_2 {
+							width: 480px;
+							> .friends {
+								position: relative;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								margin-top: 10px;
+								> h3 {
+									position: absolute;
+									top: 28px;
+									left: 22px;
+									font-size: 28px;
+									font-weight: 500;
+								}
+
+								> h4 {
+									position: absolute;
+									top: 28px;
+									right: 10px;
+									font-size: 28px;
+									letter-spacing: 10px;
+									cursor: pointer;
+									> a {
+										&:hover {
+											color: red;
+										}
+									}
+								}
+
+								> .my {
+									position: absolute;
+									top: 100px;
+									left: 22px;
+									> .img {
+										width: 80px;
+										height: 80px;
+										color: #fff;
+										font-size: 50px;
+										text-align: center;
+										line-height: 75px;
+										background-color: #ccc;
+										border: 1px solid #ccc;
+										border-radius: 35px;
+									}
+									> .name {
+										position: absolute;
+										top: 20px;
+										left: 100px;
+										width: 70px;
+										font-size: 20px;
+										font-weight: bold;
+									}
+
+									> .msg {
+										position: absolute;
+										top: 50px;
+										left: 100px;
+										width: 70px;
+										font-size: 14px;
+									}
+								}
+							} //end of .friends
+						} //end of .article-box_2
+
+						> .article-box_3 {
+							width: 480px;
+						} //end of .article-box_3
+
+						> .article-box_4 {
+							width: 480px;
+						} //end of .article-box_4
+					} //end of .article-container
+				}
+			} //end of section
 
 			> footer {
 				> div {
@@ -80,7 +296,7 @@ body {
 							}
 						}
 
-						> .far.fa-comment {
+						> .fas.fa-comment {
 							position: absolute;
 							top: 25px;
 							left: 175px;
