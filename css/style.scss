@@ -71,17 +71,81 @@ body {
 						left: 0;
 						top: 0;
 
-						left: -480px;
 						left: -960px;
 						left: -1440px;
 						left: 0;
+						left: -480px;
 
 						width: calc(480px * 4);
 						> .article-box {
 							width: 480px;
 							background-position: center center;
 							background-size: cover;
+							> .friends {
+								position: relative;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								margin-top: 10px;
+								> h3 {
+									position: absolute;
+									top: 28px;
+									left: 22px;
+									font-size: 28px;
+									font-weight: 500;
+								}
 
+								> h4 {
+									position: absolute;
+									top: 28px;
+									right: 10px;
+									font-size: 28px;
+									letter-spacing: 10px;
+									cursor: pointer;
+									> a {
+										&:hover {
+											color: red;
+										}
+									}
+								}
+
+								> .my {
+									position: absolute;
+									top: 100px;
+									left: 22px;
+									> .img {
+										width: 80px;
+										height: 80px;
+										color: #fff;
+										font-size: 50px;
+										text-align: center;
+										line-height: 75px;
+										background-color: #ccc;
+										border: 1px solid #ccc;
+										border-radius: 35px;
+									}
+									> .name {
+										position: absolute;
+										top: 20px;
+										left: 100px;
+										width: 70px;
+										font-size: 20px;
+										font-weight: bold;
+									}
+
+									> .msg {
+										position: absolute;
+										top: 50px;
+										left: 100px;
+										width: 70px;
+										font-size: 14px;
+									}
+								}
+							} //end of .friends
+						} //end of .article-box
+
+						> .article-box_2 {
+							width: 480px;
 							> .talk {
 								position: relative;
 								display: flex;
@@ -193,71 +257,6 @@ body {
 									} //end of .group
 								} //end of .grouptalk
 							} //end of .talk
-						} //end of .article-box
-
-						> .article-box_2 {
-							width: 480px;
-							> .friends {
-								position: relative;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								margin-top: 10px;
-								> h3 {
-									position: absolute;
-									top: 28px;
-									left: 22px;
-									font-size: 28px;
-									font-weight: 500;
-								}
-
-								> h4 {
-									position: absolute;
-									top: 28px;
-									right: 10px;
-									font-size: 28px;
-									letter-spacing: 10px;
-									cursor: pointer;
-									> a {
-										&:hover {
-											color: red;
-										}
-									}
-								}
-
-								> .my {
-									position: absolute;
-									top: 100px;
-									left: 22px;
-									> .img {
-										width: 80px;
-										height: 80px;
-										color: #fff;
-										font-size: 50px;
-										text-align: center;
-										line-height: 75px;
-										background-color: #ccc;
-										border: 1px solid #ccc;
-										border-radius: 35px;
-									}
-									> .name {
-										position: absolute;
-										top: 20px;
-										left: 100px;
-										width: 70px;
-										font-size: 20px;
-										font-weight: bold;
-									}
-
-									> .msg {
-										position: absolute;
-										top: 50px;
-										left: 100px;
-										width: 70px;
-										font-size: 14px;
-									}
-								}
-							} //end of .friends
 						} //end of .article-box_2
 
 						> .article-box_3 {

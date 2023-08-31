@@ -1,12 +1,13 @@
-const $footer = $('footer>div>a');
-const $container = $('section>.article-container');
+const $indicator = $('footer a');
+const $container = $('.article-container');
 
-$footer.on('click', function (evt) {
+$indicator.on('click', function (evt) {
 	evt.preventDefault();
 
-	const nowIdx = $footer.index(this);
+	const nowIdx = $indicator.index(this);
 
-	$container({ left: -480 * nowIdx });
+	$container.animate({ left: -480 * nowIdx });
 
-	$footer.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
+	$indicator.eq(nowIdx).parent().addClass('on');
+	$indicator.eq(nowIdx).parent().siblings().removeClass('on');
 });
